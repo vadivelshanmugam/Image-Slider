@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Image Slider</title>
+	<link rel="stylesheet" href="css/main.css" />
+	
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="src/main.js"></script>
+
+</head>
+
+<body>
+	<h1 class="demo-title">Image Slider</h1>
+	<div id="wrapper">
+
+		<!-- Slider -->
+		<ul id="slider">
+
+			<li>
+				<img src="images/1.jpg" alt="picture">
+			</li>
+			<li>
+				<img src="images/2.jpg" alt="picture">
+			</li>
+			<li>
+				<img src="images/3.jpg" alt="picture">
+			</li>
+			<li>
+				<img src="images/4.jpg" alt="picture">
+			</li>
+			<li>
+				<img src="images/5.jpg" alt="picture">
+			</li>
+
+		</ul><!-- end Slider #1 -->
+		
+	</div><!-- end wrapper -->
+	<div class="slider-nav">
+		<a class="prev-btn">Prev</a>
+		<a class="no-btn">1</a><a class="no-btn">2</a><a class="no-btn">3</a><a class="no-btn">4</a><a class="no-btn">5</a>
+		<a class="next-btn">Next</a>
+	</div>
+
+</body>
+<script>
+$(function(){
+	$('#slider').movingSlider();
+});
+</script>
+
+</html>
